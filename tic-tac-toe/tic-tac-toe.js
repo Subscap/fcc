@@ -474,7 +474,7 @@ var game;
 var userChoice;
 // Click event for x
 document.getElementById('x').addEventListener("click", () => {
-      userChioce = x;
+      userChoice = x;
       game = new TicTacToe('x','o');
       //Hide Modal Box
       document.getElementById('modal').classList.add('closed');
