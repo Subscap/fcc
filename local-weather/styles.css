@@ -1,0 +1,216 @@
+
+html {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+html.thunderstorm {
+  background-image: url(https://c3.staticflickr.com/4/3680/10913085314_76ef5f7656_b.jpg);
+}
+
+html.hail{
+  background-image: url(https://c2.staticflickr.com/6/5094/5415991457_46b2267b2e_b.jpg);
+}
+
+html.drizzle{
+  background-image: url(https://c2.staticflickr.com/9/8296/7984415265_3298a15522_b.jpg);
+}
+
+html.snow{
+  background-image: url(https://c4.staticflickr.com/5/4018/4486252227_53873b0374_b.jpg);
+}
+
+html.fog {
+  background-image: url(https://c3.staticflickr.com/9/8439/7959894106_f916023ecc_b.jpg);
+}
+
+html.rain {
+  background-image: url(https://c2.staticflickr.com/9/8296/7984415265_3298a15522_b.jpg);
+}
+
+html.cloudy {
+  background-image: url(https://c3.staticflickr.com/9/8217/8306276802_8dfb535661_b.jpg);
+}
+
+html.overcast {
+  background-image: url(https://c8.staticflickr.com/3/2559/3907212791_f64c59030a_b.jpg);
+}
+
+html.def {
+  background-image: url(https://c6.staticflickr.com/1/591/22779107021_bd8c1729ba_h.jpg);
+}
+
+body {
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.42857143;
+  color: #fff;
+  font-weight: bold;
+}
+
+body.rain,
+body.overcast,
+body.clear,
+body.thunderstorm {
+  color: #fff;
+}
+
+body.ice, 
+body.hail,
+body.snow,
+body.fog,
+body.cloudy {
+  color: #000;
+}
+
+.outer-container {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 282px;
+  text-align: center;
+}
+
+.data-container {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+}
+
+.data-container i {
+  position: relative;
+  font-size: 20px;
+}
+
+#wind {
+  font-size: 20px;
+}
+
+#temp span {
+  display: inline;
+}
+
+#temp #units {
+  color: #d47600;
+}
+
+#temp #units:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#controls div {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  height: 70px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+#controls div:hover {
+  cursor: pointer;
+}
+
+#controls:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#change-units {
+  background: rgba(212, 118, 0, 0.6);
+}
+
+#change-units:hover {
+  background: rgba(212, 118, 0, 1);
+}
+
+#change-units:focus {
+  outline: none;
+}
+
+#change-location {
+  background: rgba(0,0,0,0.3);
+}
+
+#change-location:hover {
+  background: rgba(0,0,0,1);
+}
+
+#change-location:focus {
+  outline: none;
+}
+
+#city-list {
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #444;
+  font-size: 1.5rem;
+  text-align: left;
+  height: 410px;
+  overflow-y: auto;
+  border: 1px solid #000;
+}
+
+#city-list h3 {
+  margin: 0;
+  padding: 10px 10px 10px 20px;
+  background: #555;
+  color: #fff;
+  position: fixed;
+  width: 252px;
+  font-size: 1.2rem;
+}
+
+#city-list ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 46px;
+}
+
+#city-list ul li {
+  padding-left: 20px;
+  border-bottom: 2px solid #555;
+  cursor: pointer;
+}
+
+#city-list ul li:first-child {
+  font-style: italic;
+  font-weight: normal;
+}
+
+#city-list ul li:last-child {
+  border-bottom: none;
+}
+
+#city-list ul li:hover {
+  background: #dfdfdf;
+}
+
+#attribution {
+  position: relative;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  font-size: 12px;
+}
+
+#attribution img {
+  max-width: 50px;
+}
